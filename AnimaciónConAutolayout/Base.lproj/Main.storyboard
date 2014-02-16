@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A598" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="mn1-nh-9Ox">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--Animacion Auto Layout-->
+        <scene sceneID="CRf-sl-GaU">
+            <objects>
+                <viewController id="mn1-nh-9Ox" customClass="AnimacionAutoLayout" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Swg-Bi-cC0"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vwo-yo-gqJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eRr-5M-Qak">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J0r-eO-EXc">
+                                <rect key="frame" x="85" y="78" width="150" height="412"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kdI-C9-rk7">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="412"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="kdI-C9-rk7" firstAttribute="leading" secondItem="J0r-eO-EXc" secondAttribute="leading" id="1ny-He-MWB"/>
+                                    <constraint firstItem="kdI-C9-rk7" firstAttribute="top" secondItem="J0r-eO-EXc" secondAttribute="top" id="6Fh-MA-IXE"/>
+                                    <constraint firstAttribute="bottom" secondItem="kdI-C9-rk7" secondAttribute="bottom" id="Tsf-lk-fBA"/>
+                                    <constraint firstAttribute="trailing" secondItem="kdI-C9-rk7" secondAttribute="trailing" id="ZeK-Yp-eGy"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dEt-aJ-GsN">
+                                <rect key="frame" x="137" y="515" width="56" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="ao2-bd-y4B"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Desliza">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="desliza:" destination="mn1-nh-9Ox" eventType="touchUpInside" id="mbe-EV-mIU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ppK-5c-uF2">
+                                <rect key="frame" x="52" y="517" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Escala">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="escala:" destination="mn1-nh-9Ox" eventType="touchUpInside" id="Dt7-je-WWO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9w0-Wg-DQh">
+                                <rect key="frame" x="225" y="517" width="63" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Desplaza">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="desplaza:" destination="mn1-nh-9Ox" eventType="touchUpInside" id="f7G-ZB-G9K"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Vwo-yo-gqJ" firstAttribute="top" secondItem="dEt-aJ-GsN" secondAttribute="bottom" constant="20" id="1g7-TI-9ny"/>
+                            <constraint firstItem="J0r-eO-EXc" firstAttribute="centerX" secondItem="eRr-5M-Qak" secondAttribute="centerX" id="BhU-ek-CHF"/>
+                            <constraint firstItem="Vwo-yo-gqJ" firstAttribute="top" secondItem="9w0-Wg-DQh" secondAttribute="bottom" constant="21" id="Ime-QE-7i8"/>
+                            <constraint firstItem="dEt-aJ-GsN" firstAttribute="leading" secondItem="ppK-5c-uF2" secondAttribute="trailing" constant="39" id="MAV-8W-DyS"/>
+                            <constraint firstItem="dEt-aJ-GsN" firstAttribute="leading" secondItem="eRr-5M-Qak" secondAttribute="leading" constant="137" id="OLp-3H-mTb"/>
+                            <constraint firstItem="Vwo-yo-gqJ" firstAttribute="top" secondItem="ppK-5c-uF2" secondAttribute="bottom" constant="21" id="Z84-dW-ad2"/>
+                            <constraint firstItem="J0r-eO-EXc" firstAttribute="leading" secondItem="eRr-5M-Qak" secondAttribute="leading" constant="85" id="ciu-0I-Gzy"/>
+                            <constraint firstItem="9w0-Wg-DQh" firstAttribute="leading" secondItem="dEt-aJ-GsN" secondAttribute="trailing" constant="32" id="fBr-0r-oeI"/>
+                            <constraint firstItem="J0r-eO-EXc" firstAttribute="top" secondItem="Swg-Bi-cC0" secondAttribute="bottom" constant="58" id="lSD-UL-6k6"/>
+                            <constraint firstItem="J0r-eO-EXc" firstAttribute="centerY" secondItem="eRr-5M-Qak" secondAttribute="centerY" id="wSB-R0-fWU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="vistaConstraintDerecho" destination="ZeK-Yp-eGy" id="P06-Z6-G3q"/>
+                        <outlet property="vistaConstraintInferior" destination="Tsf-lk-fBA" id="r8O-9V-C27"/>
+                        <outlet property="vistaConstraintIzquierdo" destination="1ny-He-MWB" id="NFE-UE-s7u"/>
+                        <outlet property="vistaConstraintSuperior" destination="6Fh-MA-IXE" id="wSA-yV-heD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ima-DS-Qe5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="804" y="648"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
